@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    /* margin: 0 !important; */
+    padding: 0;
+    box-sizing: border-box;
+    color: #333333;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Poppins", system-ui;
+    /* border: 1px solid red; */
+}
+
+h1, h2, h3, h4 , h5, h6 , small,p  {
+    margin: 0 !important;
+}
+
+small{
+    font-size: 13px !important;
+}
+
+body{
+    position: relative;
+    background-color: #fafafa !important;
+}
+
+
+.image-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+img {
+    max-width: 100%;
+    height: fit-content;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.icon{
+    width: 30px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    /* font-size: 100px; */
+}
+
+.main{
+    width: 550px;
+    z-index: 1;
+    /* height: 450px; */
+    
+}
+
+.todos{
+    background-color: #ffffff;
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    padding-bottom: 2rem;
+    
+}
+
+label{
+    font-size: 13px !important;
+}
+
+.todo-footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 1rem;
+    /* width: ; */
+}
+
+.input{
+    /* width: 100; */
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 7px 10px;
+    font-size: 13px !important;
+    font-weight: 500;
+
+}
+
+input::placeholder{
+    font-size: 13px !important;
+}
+
+input[type="checkbox"]{
+    color: black !important;
+    border: 1px solid #ccc !important;
+    margin-top: 2px;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.7;
+}
