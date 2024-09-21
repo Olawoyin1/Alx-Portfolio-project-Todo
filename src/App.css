@@ -3,7 +3,7 @@
 *{
     /* margin: 0 !important; */
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     color: #333333;
     list-style-type: none;
     text-decoration: none;
@@ -15,6 +15,11 @@ h1, h2, h3, h4 , h5, h6 , small,p  {
     margin: 0 !important;
 }
 
+
+.pointer{
+    align-items: end !important;
+}
+
 small{
     font-size: 13px !important;
 }
@@ -22,13 +27,16 @@ small{
 body{
     position: relative;
     background-color: #fafafa !important;
+    background-image: url('../public/Images/bg.avif') !important;
+    background-position: center;
+    background-size: cover;
+    background-color: #4b4a4a !important;
+    background-blend-mode: multiply !important;
 }
 
 
-.image-bg{
-    position: absolute;
-    top: 0;
-    left: 0;
+.btn {
+    font-size: 13px !important;
 }
 
 
@@ -53,7 +61,7 @@ img {
 }
 
 .main{
-    width: 550px;
+    max-width: 599px;
     z-index: 1;
     /* height: 450px; */
     
@@ -62,10 +70,33 @@ img {
 .todos{
     background-color: #ffffff;
     width: 100%;
-    min-height: 300px;
+    height: 400px;
     position: relative;
     padding-bottom: 2rem;
+    overflow-y: scroll;
     
+
+}
+
+button {
+    cursor: pointer !important;
+    margin: 0 !important;
+    border: none;
+    outline: none !important;;
+    background-color: transparent;
+    
+}
+
+.todo{
+    position: relative;
+    padding: 10px;
+}
+
+.actions{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    /* padding: 7px; */
 }
 
 label{
@@ -105,4 +136,77 @@ input[type="checkbox"]{
 .completed{
     text-decoration: line-through;
     opacity: 0.7;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
+.search{
+    max-width: 380px;
+}
+
+
+
+
+@media (max-width:578px) {
+    .btn{
+        display: block;
+        width: 100%;
+        margin: 1rem 0 !important;
+        padding: 0;
+        /* margin-bottom: 10px !important; */
+    }
+
+    .h-text{
+        display: block !important;
+        text-align: center;
+    }
+
+    .container{
+        height: fit-content;
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    .todos{
+        background-color: #ffffff;
+        width: 100%;
+        min-height: 400px;
+        position: relative;
+        padding-bottom: 2rem;
+        overflow-y: hidden !important;
+        
+    
+    }
+
+    .search{
+        display: block !important;
+        max-width: 100%;
+    }
+
+    .main{
+        max-width: 100%;
+        z-index: 1;
+        /* height: 450px; */
+        
+    }
+
+   
 }
