@@ -42,6 +42,12 @@ function App() {
 
   return (
     <div className="container">
+      <div className="image-bg">
+        <img src="./images/bg-desktop-light.jpg" style={{
+          width: "100%",
+          height: "100%",
+        }} alt="" />
+      </div>
       <div className="main m-0">
         <Header 
           search={search}

@@ -136,7 +136,7 @@ const Form = ({
             <button
               type="submit"
               onClick={isEditing ? handleUpdate : handleSubmit2}
-              className="btn btn-primary mt-sm-4"
+              className="btn btn-dark mt-sm-4"
             >
                 {isEditing ? "Edit" : "Add" }
             

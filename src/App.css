@@ -16,6 +16,14 @@ h1, h2, h3, h4 , h5, h6 , small,p  {
 }
 
 
+.image-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* height: 700px !important; */
+}
+
+
 .pointer{
     align-items: end !important;
 }
@@ -27,10 +35,10 @@ small{
 body{
     position: relative;
     background-color: #fafafa !important;
-    background-image: url('../public/Images/bg.avif') !important;
+    /* background-image: url('../public/Images/bg.avif') !important; */
     background-position: center;
     background-size: cover;
-    background-color: #4b4a4a !important;
+    background-color: #fafafa !important;
     background-blend-mode: multiply !important;
 }
 
@@ -140,7 +148,7 @@ input[type="checkbox"]{
 
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 2px;
 }
 
 /* Track */
@@ -208,5 +216,12 @@ background: #555;
         
     }
 
-   
+    .image-bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 240px !important ;
+        background-color: red;
+        
+    }
 }
